@@ -1,0 +1,3 @@
+select distinct Documento, Fecha, Departamento, Municipio, Dia, Hora, Sitio, Agresor, Victima, 
+Edad, Pais_nacimiento, Clase_empleado, Profesion, Escolaridad, Codigo_DANE
+from tablaOrigen order by fecha desc
