@@ -1,3 +1,4 @@
-select distinct Documento, Fecha, Departamento, Municipio, Dia, Hora, Sitio, Agresor, Victima, 
-Edad, Pais_nacimiento, Clase_empleado, Profesion, Escolaridad, Codigo_DANE
-from tablaOrigen order by fecha desc
+b.Documento, b.Fecha, b.Departamento, b.Municipio, b.Dia, b.Hora, b.Sitio, b.Agresor, b.Victima, b.Edad, b.Pais_nacimiento, b.Clase_empleado, b.Profesion, b.Escolaridad, b.Codigo_DANE from 
+(select distinct CONCAT(max(fecha), documento) llave from TablaOrigen1 group by documento) a, 
+(select distinct CONCAT(fecha, documento) llave, Documento, Fecha, Departamento, Municipio, Dia, Hora, Sitio, Agresor, Victima, Edad, Pais_nacimiento, Clase_empleado, Profesion, Escolaridad, Codigo_DANE 
+from TablaOrigen1) b where a.llave=b.llave
