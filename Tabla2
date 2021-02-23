@@ -1,0 +1,17 @@
+CREATE TABLE [dbo].[TablaDestino] (
+    [Documento]       INT           NOT NULL,
+    [Fecha]           DATE          NOT NULL,
+    [Departamento]    VARCHAR(50) NULL,
+    [Municipio]       VARCHAR(50) NULL,
+    [Dia]             VARCHAR(50) NULL,
+    [Hora]            VARCHAR(50) NULL,
+    [Sitio]           VARCHAR(50) NULL,
+    [Agresor]         VARCHAR(50) NULL,
+    [Victima]         VARCHAR(50) NULL,
+    [Edad]            VARCHAR(50) NULL,
+    [Pais_nacimiento] VARCHAR(50) NULL,
+    [Clase_empleado]  VARCHAR(50) NULL,
+    [Profesion]       VARCHAR(200) NULL,
+    [Escolaridad]     VARCHAR(50)    NULL,
+    [Codigo_DANE]     INT           NULL
+);
