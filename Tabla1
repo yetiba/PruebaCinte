@@ -1,17 +1,17 @@
-CREATE TABLE [dbo].[TablaOrigen] (
+CREATE TABLE [dbo].[TablaOrigen1] (
     [Documento]       INT           NOT NULL,
     [Fecha]           DATE          NOT NULL,
-    [Departamento]    NVARCHAR (50) NULL,
-    [Municipio]       NVARCHAR (50) NULL,
-    [Dia]             NVARCHAR (50) NULL,
-    [Hora]            NVARCHAR (50) NULL,
-    [Sitio]           NVARCHAR (50) NULL,
-    [Agresor]         NVARCHAR (50) NULL,
-    [Victima]         NVARCHAR (50) NULL,
-    [Edad]            NVARCHAR (50) NULL,
-    [Pais_nacimiento] NVARCHAR (50) NULL,
-    [Clase_empleado]  NVARCHAR (50) NULL,
-    [Profesion]       NVARCHAR (50) NULL,
-    [Escolaridad]     NVARCHAR (50) NULL,
-    [Codigo_DANE]     NVARCHAR (50) NULL
+    [Departamento]    VARCHAR(50) NULL,
+    [Municipio]       VARCHAR(50) NULL,
+    [Dia]             VARCHAR(50) NULL,
+    [Hora]            VARCHAR(50) NULL,
+    [Sitio]           VARCHAR(50) NULL,
+    [Agresor]         VARCHAR(50) NULL,
+    [Victima]         VARCHAR(50) NULL,
+    [Edad]            VARCHAR(50) NULL,
+    [Pais_nacimiento] VARCHAR(50) NULL,
+    [Clase_empleado]  VARCHAR(50) NULL,
+    [Profesion]       VARCHAR(200) NULL,
+    [Escolaridad]     VARCHAR(50)    NULL,
+    [Codigo_DANE]     INT           NULL
 );
